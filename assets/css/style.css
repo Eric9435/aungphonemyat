@@ -461,18 +461,22 @@ textarea.input{min-height:120px;resize:vertical}
 
 .hero.hero-split{
   position: relative;
-  padding: 88px 0 60px;
+  min-height: calc(100vh - 72px);        /* fills first screen under navbar */
+  display:flex;
+  align-items:center;                    /* vertically center content */
+  padding: 26px 0 16px;                  /* remove big empty top/bottom */
   border-bottom: 1px solid rgba(255,255,255,.08);
   overflow: hidden;
 
-  /* keep your navy + optional subtle image */
   background:
     radial-gradient(900px 520px at 75% 30%, rgba(0,179,255,.14), transparent 60%),
+    radial-gradient(700px 520px at 88% 70%, rgba(0,179,255,.10), transparent 62%),
     linear-gradient(rgba(11,28,45,.92), rgba(11,28,45,.96)),
     url("assets/img/hero-bg.jpg") center/cover no-repeat;
 }
 
 .hero-split .split{
+  width:100%;
   display:grid;
   grid-template-columns: 1.05fr .95fr;
   gap: 28px;
@@ -480,9 +484,17 @@ textarea.input{min-height:120px;resize:vertical}
 }
 
 @media (max-width: 980px){
-  .hero-split .split{ grid-template-columns:1fr; text-align:center; }
+  .hero.hero-split{
+    min-height: auto;
+    padding: 56px 0 42px;
+  }
+  .hero-split .split{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
 }
 
+/* text */
 .hero-split .hello{
   color: rgba(199,208,217,.90);
   font-weight: 800;
@@ -501,7 +513,7 @@ textarea.input{min-height:120px;resize:vertical}
 }
 
 .hero-split h1 .accent{
-  color: var(--accent); /* keep your accent */
+  color: var(--accent);
 }
 
 .hero-split .lead{
@@ -526,14 +538,41 @@ textarea.input{min-height:120px;resize:vertical}
   .hero-split .cta-row .btn{ width: 100%; }
 }
 
-/* big portrait right */
+/* portrait wrap (no card) */
 .hero-split .portraitWrap{
   display:flex;
   justify-content:flex-end;
+  align-items:flex-end;
+  position:relative;
 }
 
 @media (max-width:980px){
-  .hero-split .portraitWrap{ justify-content:center; }
+  .hero-split .portraitWrap{
+    justify-content:center;
+    margin-top: 26px;
+  }
+}
+
+/* premium glow anchor behind PNG */
+.hero-split .portraitWrap::before{
+  content:"";
+  position:absolute;
+  right: 10%;
+  bottom: 8%;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(0,179,255,.18), transparent 62%);
+  pointer-events:none;
+}
+
+@media (max-width:980px){
+  .hero-split .portraitWrap::before{
+    right: 50%;
+    transform: translateX(50%);
+    width: 420px;
+    height: 420px;
+    bottom: 6%;
+  }
 }
 
 /* ===== TRUE CLEAN PNG ONLY (NO CARD / NO FRAME) ===== */
