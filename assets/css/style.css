@@ -544,13 +544,13 @@ textarea.input{min-height:120px;resize:vertical}
   align-items:flex-end;
 }
 
-/* the image itself controls everything */
+/* Clean PNG cutout (big + safe) */
 .hero-split .portraitImg{
-  height: 520px;       /* adjust size here */
+  height: min(820px, 78vh);    /* BIG on desktop but safe on short screens */
   width: auto;
   object-fit: contain;
 
- /* soft natural shadow only */
+  /* soft natural shadow only */
   filter: drop-shadow(0 30px 60px rgba(0,0,0,.55));
 }
 
@@ -562,7 +562,7 @@ textarea.input{min-height:120px;resize:vertical}
   }
 
   .hero-split .portraitImg{
-    height: 620px;
+    height: min(720px, 70vh);  /* big but doesn't exceed screen height */
   }
 }
 
