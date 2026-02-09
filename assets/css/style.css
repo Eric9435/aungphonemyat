@@ -672,7 +672,7 @@ textarea.input{min-height:120px;resize:vertical}
     radial-gradient(1000px 640px at 75% 35%, rgba(0,179,255,.16), transparent 62%),
     radial-gradient(900px 640px at 30% 70%, rgba(255,255,255,.06), transparent 62%),
     linear-gradient(rgba(11,28,45,.92), rgba(11,28,45,.97)),
-    url("assets/img/hero-bg.png") center/cover no-repeat;
+    url("assets/img/hero-bg.jpg") center/cover no-repeat;
 }
 
 .hero-split .split{
