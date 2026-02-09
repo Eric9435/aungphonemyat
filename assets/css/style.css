@@ -670,7 +670,7 @@ textarea.input{min-height:120px;resize:vertical}
 
   background:
   radial-gradient(900px 520px at 75% 30%, rgba(0,179,255,.12), transparent 60%),
-  linear-gradient(rgba(11,28,45,.70), rgba(11,28,45,.82)),
+  linear-gradient(rgba(11,28,45,.70), rgba(11,28,45,.80)),
   url("../img/hero-bg.jpg") center/cover no-repeat;
 }
 
