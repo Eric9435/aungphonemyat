@@ -394,3 +394,65 @@ textarea.input{min-height:120px;resize:vertical}
 }
 .footer a{color:rgba(245,247,250,.85)}
 .footer a:hover{color:#fff}
+
+/* ===============================
+   MOBILE OPTIMIZATION (2026 pro)
+   =============================== */
+
+@media (max-width: 900px){
+
+  /* hero stacks vertically */
+  .hero-grid,
+  .hero-minimal .hero-grid{
+    grid-template-columns: 1fr !important;
+    text-align:center;
+  }
+
+  /* portrait center */
+  .portrait,
+  .profile-pic{
+    margin:auto;
+  }
+
+  /* tighter hero padding */
+  .hero,
+  .hero-minimal{
+    padding: 60px 0 50px;
+  }
+
+  /* headings slightly smaller */
+  h1{
+    font-size: 1.7rem;
+  }
+
+  .lead{
+    font-size: 0.98rem;
+  }
+
+  /* buttons full width for easier tap */
+  .cta{
+    flex-direction: column;
+  }
+
+  .cta .btn{
+    width:100%;
+  }
+
+  /* project grid single column */
+  .grid3,
+  .grid2{
+    grid-template-columns: 1fr !important;
+  }
+
+  /* kpi grid 2 columns */
+  .kpi-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* reduce card padding */
+  .card,
+  .card-lite{
+    padding: 14px;
+  }
+
+}
