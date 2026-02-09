@@ -456,3 +456,141 @@ textarea.input{min-height:120px;resize:vertical}
   }
 
 }
+
+/* ===== Hero layout like sample (text left / portrait right) - keep navy theme ===== */
+
+.hero.hero-split{
+  position: relative;
+  padding: 88px 0 60px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  overflow: hidden;
+
+  /* keep your navy + optional subtle image */
+  background:
+    radial-gradient(900px 520px at 75% 30%, rgba(0,179,255,.14), transparent 60%),
+    linear-gradient(rgba(11,28,45,.92), rgba(11,28,45,.96)),
+    url("assets/img/hero-bg.jpg") center/cover no-repeat;
+}
+
+.hero-split .split{
+  display:grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 28px;
+  align-items:center;
+}
+
+@media (max-width: 980px){
+  .hero-split .split{ grid-template-columns:1fr; text-align:center; }
+}
+
+.hero-split .hello{
+  color: rgba(199,208,217,.90);
+  font-weight: 800;
+  letter-spacing: .02em;
+  margin: 0 0 10px;
+}
+
+.hero-split h1{
+  font-size: 2.35rem;
+  line-height: 1.10;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 980px){
+  .hero-split h1{ font-size: 1.85rem; }
+}
+
+.hero-split h1 .accent{
+  color: var(--accent); /* keep your accent */
+}
+
+.hero-split .lead{
+  margin: 0 0 18px;
+  color: rgba(199,208,217,.92);
+  max-width: 62ch;
+}
+
+@media (max-width: 980px){
+  .hero-split .lead{ margin-left:auto; margin-right:auto; }
+}
+
+.hero-split .cta-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+@media (max-width: 980px){
+  .hero-split .cta-row{ justify-content:center; }
+  .hero-split .cta-row .btn{ width: 100%; }
+}
+
+/* big portrait right */
+.hero-split .portraitWrap{
+  display:flex;
+  justify-content:flex-end;
+}
+
+@media (max-width:980px){
+  .hero-split .portraitWrap{ justify-content:center; }
+}
+
+.hero-split .portraitCard{
+  width: min(520px, 100%);
+  height: 420px;
+  border-radius: 26px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.12);
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.hero-split .portraitCard::after{
+  content:"";
+  position:absolute; inset:0;
+  background: radial-gradient(70% 70% at 50% 20%, rgba(0,179,255,.16), transparent 55%);
+  pointer-events:none;
+}
+
+.hero-split .portraitCard img{
+  max-height: 110%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 55px rgba(0,0,0,.55));
+}
+
+/* social icons row like sample */
+.hero-split .social{
+  display:flex;
+  gap:10px;
+  margin-top: 16px;
+}
+
+@media (max-width:980px){
+  .hero-split .social{ justify-content:center; }
+}
+
+.hero-split .iconBtn{
+  width: 42px; height: 42px;
+  border-radius: 999px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: rgba(245,247,250,.92);
+}
+
+.hero-split .iconBtn:hover{
+  border-color: rgba(0,179,255,.45);
+}
+
+/* optional: make top-right CTA like sample */
+.menu .top-cta{
+  border-radius: 999px;
+  padding: 11px 16px;
+}
