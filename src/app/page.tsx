@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import FixedSidebar from "@/components/layout/FixedSidebar";
 import Hero from "@/components/home/Hero";
 import ProjectsSection from "@/components/projects/ProjectsSection";
@@ -35,6 +36,7 @@ export default function HomePage() {
 
       </div>
 
-    </main>
+      <Footer />
+</main>
   );
 }
