@@ -14,7 +14,7 @@ export default function HomePage() {
 
       <FixedSidebar />
 
-      <div className="ml-72">
+      <div className="lg:ml-72">
 
         <div className="mx-auto max-w-[1600px] px-10 py-10">
 
