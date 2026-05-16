@@ -9,27 +9,27 @@ import { profile } from "@/data/profile/profile";
 
 export default function Hero() {
   return (
-    <section id="home" className="border-b border-slate-200 pb-12">
+    <section id="home" className="border-b border-slate-200 pb-10">
       <div className="max-w-[1450px]">
 
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div>
-            <div className="flex items-center gap-7">
+            <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-8">
               <div className="shrink-0 overflow-hidden rounded-2xl border border-slate-300 bg-white p-1.5 shadow-md">
-                <div className="relative h-[145px] w-[145px] overflow-hidden rounded-xl bg-slate-100">
+                <div className="relative h-[165px] w-[165px] overflow-hidden rounded-xl bg-slate-100">
                   <Image
                     src="/profile.jpg"
                     alt="Aung Phone Myat"
                     fill
                     priority
-                    sizes="145px"
+                    sizes="165px"
                     className="object-cover"
                   />
                 </div>
               </div>
 
               <div>
-                <h1 className="max-w-[980px] text-[3.6rem] font-bold leading-[1.03] tracking-tight text-slate-950">
+                <h1 className="max-w-[980px] text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-[3.6rem]">
                   {profile.title}
                 </h1>
 
@@ -39,7 +39,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <p className="mt-6 max-w-[980px] text-justify text-[1.02rem] leading-9 text-slate-700">
+            <p className="mt-6 max-w-[980px] text-left text-base leading-8 text-slate-700 md:text-justify lg:text-[1.02rem] lg:leading-9">
               {profile.about}
             </p>
 
@@ -60,7 +60,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <aside className="hidden rounded-2xl border border-slate-300 bg-white p-4 shadow-md lg:block">
+          <aside className="rounded-2xl border border-slate-300 bg-white p-4 shadow-md xl:block">
 
             <div className="mt-5 space-y-4 text-sm">
               <div className="flex gap-3">

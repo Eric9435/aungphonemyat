@@ -14,9 +14,9 @@ export default function HomePage() {
 
       <FixedSidebar />
 
-      <div className="lg:ml-72">
+      <div className="pt-20 xl:ml-72 xl:pt-0">
 
-        <div className="mx-auto max-w-[1600px] px-10 py-10">
+        <div className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 lg:px-10 lg:py-10">
 
           <Hero />
 

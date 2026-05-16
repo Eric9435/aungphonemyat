@@ -2,7 +2,7 @@ import { notes } from "@/data/notes";
 
 export default function EngineeringNotesPreview() {
   return (
-    <section id="blog" className="py-20">
+    <section id="blog" className="py-14">
       <div className="flex items-end justify-between gap-6">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-700">

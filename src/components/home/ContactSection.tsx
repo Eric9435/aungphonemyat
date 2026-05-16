@@ -7,15 +7,15 @@ import {
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-24">
-      <div className="rounded-[2rem] bg-[#081421] p-12 text-white shadow-2xl">
+    <section id="contact" className="py-14">
+      <div className="rounded-[2rem] bg-[#081421] p-6 text-white shadow-2xl sm:p-8 lg:p-12">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
               Contact
             </p>
 
-            <h2 className="mt-6 text-5xl font-bold tracking-tight">
+            <h2 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               Let’s Build Engineering Systems
             </h2>
 
@@ -36,7 +36,7 @@ export default function ContactSection() {
                 <p className="text-sm uppercase tracking-widest text-slate-500">
                   Email
                 </p>
-                <p className="mt-2 text-2xl font-semibold">
+                <p className="mt-2 break-all text-lg font-semibold sm:text-xl lg:text-2xl">
                   aungphonemyat9435@gmail.com
                 </p>
               </div>
@@ -52,7 +52,7 @@ export default function ContactSection() {
                 <p className="text-sm uppercase tracking-widest text-slate-500">
                   GitHub
                 </p>
-                <p className="mt-2 text-2xl font-semibold">
+                <p className="mt-2 break-all text-lg font-semibold sm:text-xl lg:text-2xl">
                   github.com/Eric9435
                 </p>
               </div>
@@ -68,7 +68,7 @@ export default function ContactSection() {
                 <p className="text-sm uppercase tracking-widest text-slate-500">
                   LinkedIn
                 </p>
-                <p className="mt-2 text-2xl font-semibold">
+                <p className="mt-2 break-all text-lg font-semibold sm:text-xl lg:text-2xl">
                   linkedin.com/in/aung-phone-myat-eric9435
                 </p>
               </div>
@@ -80,10 +80,10 @@ export default function ContactSection() {
                 <p className="text-sm uppercase tracking-widest text-slate-500">
                   Phone
                 </p>
-                <p className="mt-2 text-2xl font-semibold">
+                <p className="mt-2 break-all text-lg font-semibold sm:text-xl lg:text-2xl">
                   +959 425096424
                 </p>
-                <p className="mt-2 text-2xl font-semibold">
+                <p className="mt-2 break-all text-lg font-semibold sm:text-xl lg:text-2xl">
                   +959 772806376
                 </p>
               </div>

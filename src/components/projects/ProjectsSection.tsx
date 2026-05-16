@@ -2,10 +2,10 @@ import { projects } from "@/data/projects";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-14">
       <h2 className="text-3xl font-bold text-slate-950">Engineering Projects</h2>
 
-      <div className="mt-10 grid gap-6 lg:grid-cols-3">
+      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <article key={project.slug} className="rounded-2xl border border-slate-300 bg-white p-6 shadow-md">
             <p className="text-sm font-semibold text-blue-700">{project.category}</p>
