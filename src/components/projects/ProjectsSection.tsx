@@ -6,57 +6,62 @@ export default function ProjectsSection() {
       <h2 className="text-3xl font-bold text-slate-950">Selected Projects</h2>
 
       <div className="mt-7 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {projects.map((project) => (
-          <article
-            key={project.slug ?? project.title}
-            className="rounded-2xl border border-slate-300 bg-white p-6 shadow-md"
-          >
-            <p className="text-sm font-semibold text-blue-700">
-              {project.category}
-            </p>
+        {projects.map((project) => {
+          const liveLink = "demo" in project ? project.demo : project.liveUrl;
+          const githubLink = "github" in project ? project.github : project.githubUrl;
 
-            <h3 className="mt-3 text-xl font-bold text-slate-950">
-              {project.title}
-            </h3>
+          return (
+            <article
+              key={project.title}
+              className="rounded-2xl border border-slate-300 bg-white p-6 shadow-md"
+            >
+              <p className="text-sm font-semibold text-blue-700">
+                {project.category}
+              </p>
 
-            <p className="mt-4 text-sm leading-7 text-slate-700">
-              {project.description}
-            </p>
+              <h3 className="mt-3 text-xl font-bold text-slate-950">
+                {project.title}
+              </h3>
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              {project.technologies.map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full bg-slate-200 px-3 py-1 text-xs font-medium text-slate-700"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+              <p className="mt-4 text-sm leading-7 text-slate-700">
+                {project.description}
+              </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
-              {(project.demo || project.liveUrl) && (
-                <a
-                  href={project.demo ?? project.liveUrl}
-                  target="_blank"
-                  className="text-sm font-semibold text-blue-700 hover:underline"
-                >
-                  Live Demo
-                </a>
-              )}
+              <div className="mt-6 flex flex-wrap gap-2">
+                {project.technologies.map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full bg-slate-200 px-3 py-1 text-xs font-medium text-slate-700"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
-              {(project.github || project.githubUrl) && (
-                <a
-                  href={project.github ?? project.githubUrl}
-                  target="_blank"
-                  className="text-sm font-semibold text-slate-700 hover:underline"
-                >
-                  GitHub
-                </a>
-              )}
-            </div>
-          </article>
-        ))}
+              <div className="mt-6 flex flex-wrap gap-3">
+                {liveLink && (
+                  <a
+                    href={liveLink}
+                    target="_blank"
+                    className="text-sm font-semibold text-blue-700 hover:underline"
+                  >
+                    Live Demo
+                  </a>
+                )}
+
+                {githubLink && (
+                  <a
+                    href={githubLink}
+                    target="_blank"
+                    className="text-sm font-semibold text-slate-700 hover:underline"
+                  >
+                    GitHub
+                  </a>
+                )}
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
