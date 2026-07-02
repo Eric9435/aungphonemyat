@@ -29,14 +29,13 @@ export default function Hero() {
               </div>
 
               <div>
-                <h1 className="max-w-[980px] text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-[3.6rem]">
+                <h1 className="max-w-[980px] text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-6xl">
                   {profile.title}
-                </p>
+                </h1>
                 <p className="text-base font-semibold text-slate-700">
                   {profile.subtitle}
-                </h1>
-
-                <p className="mt-3 max-w-3xl text-[1.05rem] leading-8 text-slate-700">
+                </p>
+                <p className="text-sm font-medium uppercase tracking-[0.35em] text-cyan-500">
                   {profile.tagline}
                 </p>
               </div>
