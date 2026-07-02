@@ -3,7 +3,13 @@ import { projects } from "@/data/projects";
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-14">
-      <h2 className="text-3xl font-bold text-slate-950">Selected Projects</h2>
+      <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-700">
+        Portfolio
+      </p>
+      <h2 className="mt-4 text-3xl font-bold text-slate-950">Featured Projects</h2>
+      <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-700">
+        Selected engineering software, full-stack web applications, and knowledge systems demonstrating expertise in industrial automation, scientific computing, and modern software engineering.
+      </p>
 
       <div className="mt-7 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => {

@@ -10,7 +10,7 @@ export default function EngineeringNotesPreview() {
           </p>
 
           <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-950">
-            Engineering Notes
+            Technical Notes & Articles
           </h2>
         </div>
 

@@ -4,7 +4,7 @@ const mainLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
-  { label: "Blog", href: "#blog" },
+  { label: "Technical Notes", href: "#blog" },
   { label: "Contact", href: "#contact" }
 ];
 

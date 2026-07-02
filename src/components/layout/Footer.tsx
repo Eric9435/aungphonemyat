@@ -7,7 +7,7 @@ export default function Footer() {
         </p>
 
         <p className="mt-3 text-xs uppercase tracking-[0.2em] text-slate-400">
-          Industrial Automation • HVAC Systems • Scientific Computing
+          Industrial Automation • Full-Stack Development • Scientific Computing
         </p>
       </div>
     </footer>
