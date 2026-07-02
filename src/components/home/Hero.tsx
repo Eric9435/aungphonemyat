@@ -35,7 +35,7 @@ export default function Hero() {
                 <p className="text-base font-semibold text-slate-700">
                   {profile.subtitle}
                 </p>
-                <p className="text-sm font-medium uppercase tracking-[0.35em] text-cyan-500">
+                <p className="text-base font-medium uppercase tracking-[0.18em] max-w-4xl text-cyan-500">
                   {profile.tagline}
                 </p>
               </div>
