@@ -1,7 +1,7 @@
 export const profile = {
   name: "Aung Phone Myat",
   title: "Airport Building Services & Automation Engineer",
-  subtitle: "Airport Building Services & Automation Engineer",
+  subtitle: "Freelance Full-Stack Software Engineer",
   tagline:
     "Industrial Automation • PLC/SCADA • BMS • HVAC Systems • Scientific Computing",
   location: "Yangon, Myanmar",
