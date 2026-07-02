@@ -69,6 +69,39 @@ export const projects = [
   githubUrl: "https://github.com/Eric9435/jazz"
 },
 
+
+{
+  title: "Serenade Singers",
+  category: "Non-Profit Organization Platform",
+  description:
+    "Full-stack digital platform for a non-profit choir organization featuring Gmail OTP authentication, member management, event management, meetings, attendance, financial transparency, donations, assets, document management, and an administrative dashboard.",
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Google Apps Script",
+    "Google Sheets"
+  ],
+  liveUrl: "https://serenade-singers.onrender.com/"
+},
+
+{
+  title: "Piano For ALL",
+  category: "Education Management Platform",
+  description:
+    "Comprehensive music academy management platform featuring Gmail OTP authentication, student enrollment, attendance, homework, teacher dashboard, payment verification, invoicing, academic reports, messaging, and administration.",
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Google Apps Script",
+    "Google Sheets"
+  ],
+  liveUrl: "https://piano-for-all.onrender.com/"
+},
+
 {
   title: "Portfolio Website",
   category: "Professional Portfolio",
