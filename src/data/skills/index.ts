@@ -4,26 +4,27 @@ export const skills = [
     items: ["PLC/SCADA", "Siemens", "Schneider", "BMS", "HMI", "Control Systems"]
   },
   {
-    group: "Engineering Systems",
-    items: ["HVAC", "Central Chiller Plants", "ACMV", "MEP", "Sensors & Actuators"]
+    group: "Building Services & HVAC Systems",
+    items: ["HVAC Systems", "Central Chiller Plants", "Building Management Systems", "ACMV", "MEP Services", "Sensors & Actuators"]
   },
   {
-    group: "Industrial Protocols",
-    items: ["Modbus", "BACnet", "Industrial Communication"]
+    group: "Industrial Communication Protocols",
+    items: ["Modbus RTU/TCP", "BACnet", "Industrial Ethernet", "RS-485"]
   },
   {
-    group: "Programming & Tools",
-    items: ["Python", "MATLAB", "C++", "GitHub", "VS Code", "Streamlit"]
+    group: "Programming Languages & Development Tools",
+    items: ["Python", "TypeScript", "JavaScript", "C++", "MATLAB", "Next.js", "React", "Git", "VS Code"]
   },
   {
-    group: "Technical Abilities",
+    group: "Engineering Competencies",
     items: [
-      "Troubleshooting",
-      "System Optimisation",
+      "System Troubleshooting",
       "Commissioning",
+      "Performance Optimization",
+      "PLC Programming",
       "Technical Documentation",
       "Control Logic Analysis",
-      "Schematic Interpretation"
+      "Engineering Problem Solving"
     ]
   }
 ];
